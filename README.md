@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Notcoin Clone
 
 This repository contains the initial setup and the final version of the Notcoin clone project, including the basic project structure, necessary images, and icons.
@@ -74,3 +75,6 @@ To get started with either the initial setup or the final version, follow these 
 
 For any inquiries, please contact me in Telegram: [Nikandr Surkov](https://t.me/nikandr_s).
 
+=======
+# checking
+>>>>>>> origin/main
