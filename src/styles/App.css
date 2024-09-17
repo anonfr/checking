@@ -1,0 +1,209 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #ffffff;
+  --secondary-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --text-color: #e0e0e0;
+  --primary-color: #81c784;
+  --secondary-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  overflow-y: auto;
+  padding-bottom: 70px; /* Increased padding to accommodate bottom nav */
+  flex: 1;
+}
+
+.night-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.day-mode {
+  background-color: #F0FFF0;
+  color: #000000;
+}
+
+h1 {
+  font-size: 90px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 20px;
+}
+
+.plant {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.plant img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.watering-button, .mini-game-button {
+  width: 80%; /* Adjust as needed */
+  max-width: 300px; /* Adjust as needed */
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.watering-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.token-display, .level-display, .info-section p {
+  font-size: 1.4rem;
+  margin: 19px 0;
+}
+
+.info-section {
+  text-align: center;
+  margin-bottom: 28px;
+  background-color: var(--secondary-color);
+}
+
+.info-section p {
+  margin: 5px 0;
+}
+
+.mini-game-button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+}
+
+.shop {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.night-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reward-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.app-title, .level-display, .info-section, .water-section, .mini-game-button, .shop {
+  width: 100%;
+  margin-bottom: 15px; /* Adjust spacing as needed */
+}
+
+.water-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.next-water {
+  margin-top: 10px;
+}
+
+.level-display {
+  margin-top: 10px;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
